@@ -1,0 +1,30 @@
+To sync  main from upstream(repo where I forked from) in github
+Sync fork by going to our repo and click the option sync fork 
+
+To sync main branch with origin main(my local repo)
+Step-1 open cmd and write git checkout main to switch to main branch
+Step-2 write "git remote add upstream <link of the branch>" you want to add data from(link to the origin my repo) 
+Step-3 write "git fetch upstream" to fetch data from upstream
+Step-4 "git merge upstream/main main" to merge main and upstream main branch
+
+or 
+Step-2 if the fork is synced simply write "git pul"l in cmd
+Step-3 or -5 "git config --global -e"  controls settings for the currently logged in user and all his repositories OR Global Git config controls settings for the currently logged in user and all his repositories and  e stands for editing (here we changed our default editor from Vim to VS code using esc,colon,q enter)(This needs to be done only once)
+Step-4 or -6  To create a new branch use "git checkout -b <branch name>" or to change a branch use "git checkout <branch name>"
+
+To sync branch with main(origin)
+Step-1 or -7 "git checkout <branch name>" to change your branch(To check the all the branches write "git branch"
+Step-2 or -8 "git rebase -i main" to sync with the main branch and interact with it using -i 
+Step-3 or -9 "git add ." to add the files after making neccessary changes(when there are conflicts)
+Step-4 or -10 "git rebase --continue" to After resolving conflict you'll need to call git rebase --continue in order for Git to continue processing the rest of the rebase.
+Step-5 or -11 use "git push --set-upstream origin <branch name>"(For first push after creating branch)
+
+"git push -f"                                                               V/S                                        "git push" 
+Whenever our commits are ahead of upstream branch we use git push -f                                      Simply pushes the file from local repo 
+(This is done only after rebase)
+
+Step-5 or -12 in this case use git push -f
+
+To create a PR 
+Step-1 go to your repo on Github and navigate to pull request,the message shown on the screen will be "compare and pull request" click on that button
+Step-2 check if the source repo and target branch are correct and make a pr 
