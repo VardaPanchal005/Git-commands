@@ -8,7 +8,7 @@ Step-3 write "git fetch upstream" to fetch data from upstream
 Step-4 "git merge upstream/main main" to merge main and upstream main branch
 
 or 
-Step-2 if the fork is synced simply write "git pul"l in cmd
+Step-2 if the fork is synced simply write "git pull" in cmd
 Step-3 or -5 "git config --global -e"  controls settings for the currently logged in user and all his repositories OR Global Git config controls settings for the currently logged in user and all his repositories and  e stands for editing (here we changed our default editor from Vim to VS code using esc,colon,q enter)(This needs to be done only once)
 Step-4 or -6  To create a new branch use "git checkout -b <branch name>" or to change a branch use "git checkout <branch name>"
 
