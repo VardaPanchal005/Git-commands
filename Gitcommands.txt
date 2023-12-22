@@ -1,4 +1,4 @@
-To sync  main from upstream(repo where I forked from) in github
+To sync  main from upstream(repo where I forked from) in github.
 Sync fork by going to our repo and click the option sync fork 
 
 To sync main branch with origin main(my local repo)
